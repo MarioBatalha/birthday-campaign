@@ -13,8 +13,10 @@
    <main>
     <aside>
         <div class="overlay"></div>
-        <img src="./asset/img/cover.jpg" alt="Ilustração de aniversário" class="sign-ilustratation">
+        <img src="assets/img/cover.jpg" alt="Ilustração de aniversário" class="sign-ilustratation">
         <h4>Celebre connosco o seu aniversário</h4>
+        <p>Temos para sí os melhores restaurante, bares, resortes, Boutive, SPA, Salão de beleza para desfrutar
+            o seu aniversário como e onde desejar. Preecha o formulário e desfrute.</p>
     </aside>
     <section>
         <div class="form-header">
@@ -24,12 +26,10 @@
         <div class="container">
             <form action=”./assets/mvc/controller/send-mail.php” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
                 <div class="input-box">
-                    <label for="email" name="Nome completo" class="user-details">Nome completo</label>
                     <input type="text" placeholder="Nome completo" name="full-name">
                 </div>
 
                 <div class="input-box">
-                    <label for="email" class="user-details">Email</label>
                     <input type="email" placeholder="Assunto" name="email">
                 </div>
                 <div class="input-box">
@@ -45,7 +45,9 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit">Enviar</button>
+                <div class="input-box">
+                    <button type="submit ">Enviar</button>
+                </div>
             </form>
         </div>
     </section>

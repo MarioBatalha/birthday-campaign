@@ -29,7 +29,7 @@ aside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 70%;
     position: relative;
 }
 
@@ -53,11 +53,12 @@ aside h4 {
 
 aside img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 section {
     display: flex;
+    width: 30%;
     flex: 1;
     justify-content: center;
     align-items: stretch;
@@ -94,7 +95,7 @@ section {
     margin-bottom: 1rem;
 }
 
-input {
+input, textarea {
     padding: 0.4rem 0.6rem;
     border-radius: 5px;
     border: 1px solid #c4c4c4;
