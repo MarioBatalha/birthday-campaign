@@ -1,6 +1,8 @@
 <?php
   //Variables
   $fullName = $_POST['full-name'];
+  $bi = $_POST['bi'];
+  $phone = $POST_['phone'];
   $email = $_POST['email'];
   $message = $_POST['message'];
   $sendDate = date('d/m/Y');

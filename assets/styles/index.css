@@ -33,13 +33,16 @@ aside {
     position: relative;
 }
 
-aside h4 {
+aside h1 {
     position: absolute;
     color: #fff;
     bottom: 3rem;
-    font-size: 2rem;
+    padding-left: 2rem;
+    font-size: 1.4rem;
     font-weight: 400;
+    justify-content: center;
 }
+
 
 .overlay {
     position: absolute;
