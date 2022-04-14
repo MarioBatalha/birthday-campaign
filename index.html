@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <title>Campanha de aniversário</title>
+</head>
+
+<body>
+   <main>
+    <aside>
+        <div class="overlay"></div>
+        <img src="./asset/img/cover.jpg" alt="Ilustração de aniversário" class="sign-ilustratation">
+        <h4>Celebre connosco o seu aniversário</h4>
+    </aside>
+    <section>
+        <div class="form-header">
+            <h2>Clube de aniversário</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque numquam impedit veniam emus.</p>
+        </div>
+        <div class="container">
+            <form action=”./assets/mvc/controller/send-mail.php” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+                <div class="input-box">
+                    <label for="email" name="Nome completo" class="user-details">Nome completo</label>
+                    <input type="text" placeholder="Nome completo" name="full-name">
+                </div>
+
+                <div class="input-box">
+                    <label for="email" class="user-details">Email</label>
+                    <input type="email" placeholder="Assunto" name="email">
+                </div>
+                <div class="input-box">
+                    <textarea name="message" placeholder="Coloque aqui a sua mensagem" rows="4" cols="100"></textarea>
+                </div>
+                <div class="checkboxes">
+                    <div class="input-box-row">
+                        <div>
+                            <label class="container-checkbox">
+                                <input type="checkbox"> Aceito e concordo com as politicas de uso
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+   </main>
+</body>
+
+</html>

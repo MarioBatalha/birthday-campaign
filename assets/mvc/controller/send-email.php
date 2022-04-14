@@ -1,0 +1,32 @@
+<?php
+  //Variables
+  $fullName = $_POST['full-name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+  $sendDate = date('d/m/Y');
+  $sendTime = date('H:i:s');
+
+  //email imput
+  $file = "
+    <html>
+      <p><b>Nome: </b>$fullname</p>
+      <p><b>E-mail: </b>$email</p>
+      <p><b>Mensagem: </b>$message</p>
+      <p>Este e-mail foi enviado em <b>$sendDate</b> às <b>$sendTime</b></p>
+    </html>
+  ";
+  
+  //To
+  $address = "info@vendas24.com";
+  $subject = "Contato pelo Site";
+
+  //This input must exists to be sucessful
+  $headers  = "MIME-Version: 1.0\n";
+  $headers .= "Content-type: text/html; charset=iso-8859-1\n";
+  $headers .= "From: $fullName <$email>";
+
+  //send
+  mail($address, $subject, $file, $headers);
+  
+  echo "<meta http-equiv='refresh' content='10;URL=../../../index.html'>";
+?>
