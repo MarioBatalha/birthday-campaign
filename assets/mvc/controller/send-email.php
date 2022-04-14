@@ -12,6 +12,7 @@
   $file = "
     <html>
       <p><b>Nome: </b>$fullname</p>
+      <p><b>BI: </b>$bi</p>
       <p><b>E-mail: </b>$email</p>
       <p><b>Mensagem: </b>$message</p>
       <p>Este e-mail foi enviado em <b>$sendDate</b> às <b>$sendTime</b></p>
@@ -20,7 +21,7 @@
   
   //To
   $address = "info@vendas24.com";
-  $subject = "Contato pelo Site";
+  $subject = "Contactado pelo Site";
 
   //This input must exists to be sucessful
   $headers  = "MIME-Version: 1.0\n";
@@ -30,5 +31,5 @@
   //send
   mail($address, $subject, $file, $headers);
   
-  echo "<meta http-equiv='refresh' content='10;URL=./index.html'>";
+  echo "<meta http-equiv='refresh' content='10;URL=./../../../index.html'>";
 ?>
