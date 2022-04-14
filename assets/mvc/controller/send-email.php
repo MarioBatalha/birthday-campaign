@@ -32,5 +32,5 @@
   //send
   mail($address, $subject, $file, $headers);
   
-  echo "<meta http-equiv='refresh' content='10;URL=index.html'>";
+  echo "<meta http-equiv='refresh' content='10;URL=./../../../index.html'>";
 ?>
