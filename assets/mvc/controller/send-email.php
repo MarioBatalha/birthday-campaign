@@ -20,13 +20,13 @@
   ";
   
   //To
-  $address = "info@vendas24.com";
+  $address = "ofertas@clubdaniversario.com";
   $subject = "Contactado pelo Site";
 
   //This input must exists to be sucessful
   $headers  = "MIME-Version: 1.0\n";
   $headers .= "Content-type: text/html; charset=iso-8859-1\n";
-  $headers .= "From: $fullName <$email>";
+  $headers .= "From: $email <$email>";
   $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
   //send
